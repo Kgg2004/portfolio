@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.js">
   <title>Personal Portfolio</title>
 </head>
-
 
 
 <body>
@@ -56,7 +56,10 @@
             <a class="nav-link  mx-4" href="#about">About Me</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link  mx-4" href="#skills">Skills</a>
+            <a class="nav-link  mx-4" href="#myCarousel">Artworks</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link  mx-4" href="#particles-js">Tech</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link  mx-4" href="#contact">Contact</a>
@@ -70,17 +73,18 @@
     <div class="pic" style="width:
     30vw">
     
-      <img src="selfimg.jpeg"  alt="" style="border-radius: 50%; width: 60vw; height: 60vw; max-width: 300px; max-height: 350px;">
+      <img src="img.jpeg"  alt="">
 
       <!-- <div class="shadow" style="width:80%;background-color: aliceblue;height:10px; border-radius: 50%; margin-top: 30px;"></div> -->
     </div>
 
-    <div class="text">
-      <h1 style="font-size: 50px;">Hi, I'm Kunal Gupta</h1>
+    <div class="text" >
+      <h1 style="font-size: 50px;"><span style="color: greenyellow;">Hi,</span> I'm Kunal Gupta</h1>
 
       <span class="big" style="font-size: 30px;">Aspiring </span>
       <span class="green" style="font-size: 25px;">Mern Stack Developer</span>
       <p style="font-size: 20px;">Welcome to My official Portfolio Website</p>
+  
       <div class="social">
         <a href="https://instagram.com/kgg5010?igshid=ZDc4ODBmNjlmNQ==" class="fa fa-instagram"></a>
         <a href="https://twitter.com/kg2112004?t=Hfz7SMjv7ou56JPUsuC4iw&s=09" class="fa fa-twitter"></a>
@@ -89,18 +93,11 @@
       <button class="download" style="cursor: pointer;">Download CV</button>
     </div>
 
-
-
-
-
   </div>
-
-
 
   <div id="about"></div>
 
-
-  <div class="container  mx-auto" style="color: white;font-family: cursive; margin-top: 100px;">
+  <div class="container  mx-auto reveal" style="color: white;font-family: cursive; margin-top: 100px;">
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2 "
@@ -113,7 +110,7 @@
           have mentioned my skills in this portfolio and also the projects i have made till now. You can contact me if
           want to collaborate and work to do some amazing stuff..</p>
       </div>
-
+      
       <div class="col-md-5 order-md-1" style="margin-top: 10px;">
 
         <!-- <img
@@ -122,10 +119,10 @@
           alt=""> -->
           <img src="https://4kwallpapers.com/images/walls/thumbs_3t/10620.png" width="500" height="300" alt="" style="margin-left: -17%;">
 
-      </div>
     </div>
   </div>
-  <div class="container  mx-auto" style="color: white;font-family: cursive; margin-top: 110px;">
+  </div>
+  <div class="container  mx-auto reveal1" style="color: white;font-family: cursive; margin-top: 110px;">
     <div class="row featurette">
       <div class="col-md-7 "
         style="background-color: rgb(32,32,32); border-radius: 10px; box-shadow: 5px 5px 10px greenyellow;">
@@ -155,8 +152,9 @@
       </div>
     </div>
   </div>
+ 
 
-  <div class="container  mx-auto" style="color: white;font-family: cursive; margin-top: 110px;">
+  <div class="container  mx-auto reveal" style="color: white;font-family: cursive; margin-top: 110px;">
     <div class="row featurette">
       <div class="col-md-7 order-md-2 "
         style="background-color: rgb(32,32,32); border-radius: 10px; box-shadow: 5px 5px 10px greenyellow;">
@@ -170,6 +168,7 @@
           <li>Have Interest in Stock Market And Trading</li>
         </ul>
       </div>
+  
       <div class="col-md-5 order-md-1" style="margin-top: 20px;">
 
         <img
@@ -178,10 +177,65 @@
           style="border-radius: 20px;" alt="">
 
       </div>
+  
+      </div>
+      <div id="myCarousel" class="carousel slide reveal3" data-ride="carousel" style="margin-top: 150px;">
+        <h1 style="text-align: center; color: greenyellow; margin-bottom: 60px;  animation: glow 1s ease-in-out infinite alternate;">My Artworks</h1>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner"">
+          <div class="carousel-item" style="text-align: center;">
+            <img class="first-slide" src="oilpastel.jpg" alt="First slide" style="width: 70vw ;height: 35vw;  margin-bottom: 20px;position: relative; border-radius: 50px;">
+            <div class="container" style="margin-bottom: 50px;">
+              
+               <p style="text-align: center; font-size: larger;">Oil Pastels</p>
+              
+        
+            </div>
+          </div>
+          <div class="carousel-item active" style="text-align: center;">
+            <img class="second-slide" src="paint.jpg" alt="Second slide"  style="width: 70vw; height: 35vw; margin-bottom: 20px; border-radius: 50px">
+            
+              <div class="container" style="margin-bottom: 50px;">
+                <p style="text-align: center; font-size: larger;">Acrylic Colors</p>
+               </div>
+              
+            
+          </div>
+          <div class="carousel-item"style="text-align: center;">
+            <img class="third-slide" src="bahubali.jpg" alt="Third slide"  style="width: 60vw; height: 35vw; margin-bottom: 20px; border-radius: 50px">
+            <div class="container" style="margin-bottom: 50px;">
+             
+                <p style="text-align: center; font-size: larger;">Graphite Sketch</p>
+              
+               
+          
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div id="tech"></div>
+      <div id="particles-js" style="height: 60vh; margin-top: 30px;position: relative;text-align: center;" class="reveal3">
+        <div class="techtext" style="position: relative;top: 70%;">
+      <h1 style="color: greenyellow;position: relative;animation: glow 1s ease-in-out infinite alternate">Let's Tech Together</h1>
+      <p style="position: relative; font-size: smaller;margin-top: 10px;">Scroll down to see my skills and projects</p>
     </div>
-    <div id="skills"></div>
+    </div>
 
-    <div class="container" style="margin-top: 110px ;">
+    <!-- <div id="skills"></div> -->
+
+    <div class="container reveal3" style="margin-top: 150px ;">
       <h2 style="color: greenyellow; text-align: center;">Tech Skills</h2>
       <div class="row" style=" text-align: center; margin-top: 50px;">
         <div class="col-lg-4">
@@ -199,7 +253,7 @@
               src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2lyY3VsYXIlMjBwaWN0dXJlJTIwcmVwcmVuc3RpbmclMjBkc2ElMjBwcm9ncmFtbWluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
               width="140" height="140"></a>
           <h3>Competitive Programming</h3>
-          <p>Doing Competitive Programing on Codeforces (Rating-1083) And Codechef (Rating-1336). It gives the real
+          <p>Doing Competitive Programing on Codeforces (Rating-1153) And Codechef (Rating-1375). It gives the real
             Competitiveness in problem solving in least possible time..</p>
 
 
@@ -215,11 +269,32 @@
 
         </div>
       </div>
-    </div>
+  
+        <div class="icons reveal3">
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=20909&format=png" alt=""></div>
 
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=21278&format=png" alt=""></div>
 
-    <div class="projects" style="margin: 0 20px 0 20px; text-align: center;">
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=108784&format=png" alt=""></div>
+
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=84710&format=png" alt=""></div>
+
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=40670&format=png" alt=""></div>
+
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=40669&format=png" alt=""></div>
+
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=13441&format=png" alt=""></div>
+
+          <div class="techpic"><img src="https://img.icons8.com/?size=2x&id=aR9CXyMagKIS&format=png" alt=""></div>
+
+        </div>
+
+</div>
+    <div class="projects reveal3" style="margin: 100px 20px 0 20px; text-align: center;margin-top: 100px;">
+      
       <h2 style="text-align: center;margin-top: 80px; margin-bottom: 70px;">Projects</h2>
+    
+      
       
         <div class="project-list">
           <div class="project">
@@ -263,12 +338,14 @@
         </div>
       </div>
     
+      
 
 
       <div id="contact"></div>
+    
 
       <!--Section: Contact v.2-->
-      <section class="mb-4" style="margin-top: 140px;">
+      <section class="mb-4 reveal2" style="margin-top: 140px;">
 
         <!--Section heading-->
         <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
@@ -303,6 +380,7 @@
                 <!--Grid column-->
 
               </div>
+            
               <!--Grid row-->
 
               <!--Grid row-->
@@ -362,8 +440,11 @@
           <!--Grid column-->
 
         </div>
-
+      
       </section>
+
+    
+     
 
 
       <!-- Optional JavaScript -->
@@ -377,6 +458,11 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+
+       
+
+      
 </body>
 
 
@@ -388,9 +474,60 @@
    
 
   </div>
+ 
   <i class="fa fa-heart" style="color: red;"></i>
   <p style="display: flex; justify-content: center; align-items: center; position: relative; top:6px">Thanks For Being
     Here..</p>
+  
+  
 </footer>
 
+
+<script>
+  
+
+const curs=document.querySelector(".green");
+
+const load=()=>{
+
+    setTimeout(()=>{
+        curs.textContent="Mern Stack Developer" ;
+    },0);
+
+    setTimeout(()=>{
+        curs.textContent="Trader";
+
+    },5000)
+}
+
+load();
+setInterval(load,10000);
+
+window.addEventListener('scroll',reveal);
+
+function reveal(){
+  var reveals=document.querySelectorAll(".reveal,.reveal1,.reveal2,.reveal3");
+
+  for(var i=0;i<reveals.length;i++){
+    var windowheight=window.innerHeight;
+    var revealtop=reveals[i].getBoundingClientRect().top;
+    var revealpoint=150;
+
+    if(revealtop<windowheight-revealpoint){
+
+      reveals[i].classList.add('active');
+
+     }
+     else{
+      reveals[i].classList.remove('active');
+     }
+  }
+}
+
+</script>
+<!-- <script type="text/javascript">
+ 
+</script> -->
 </html>
+<script src="particles.js"></script>
+<script src="app.js"></script>
